@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "Rudder-Firebase_Example.app"
-               BlueprintName = "Rudder-Firebase_Example"
-               ReferencedContainer = "container:Rudder-Firebase.xcodeproj">
+               BuildableName = "Rudder-CustomerIO_Example.app"
+               BlueprintName = "Rudder-CustomerIO_Example"
+               ReferencedContainer = "container:Rudder-CustomerIO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "Rudder-Firebase_Example.app"
-            BlueprintName = "Rudder-Firebase_Example"
-            ReferencedContainer = "container:Rudder-Firebase.xcodeproj">
+            BuildableName = "Rudder-CustomerIO_Example.app"
+            BlueprintName = "Rudder-CustomerIO_Example"
+            ReferencedContainer = "container:Rudder-CustomerIO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -42,9 +42,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "Rudder-Firebase_Tests.xctest"
-               BlueprintName = "Rudder-Firebase_Tests"
-               ReferencedContainer = "container:Rudder-Firebase.xcodeproj">
+               BuildableName = "Rudder-CustomerIO_Tests.xctest"
+               BlueprintName = "Rudder-CustomerIO_Tests"
+               ReferencedContainer = "container:Rudder-CustomerIO.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "Rudder-Firebase_Example.app"
-            BlueprintName = "Rudder-Firebase_Example"
-            ReferencedContainer = "container:Rudder-Firebase.xcodeproj">
+            BuildableName = "Rudder-CustomerIO_Example.app"
+            BlueprintName = "Rudder-CustomerIO_Example"
+            ReferencedContainer = "container:Rudder-CustomerIO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -91,9 +91,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "Rudder-Firebase_Example.app"
-            BlueprintName = "Rudder-Firebase_Example"
-            ReferencedContainer = "container:Rudder-Firebase.xcodeproj">
+            BuildableName = "Rudder-CustomerIO_Example.app"
+            BlueprintName = "Rudder-CustomerIO_Example"
+            ReferencedContainer = "container:Rudder-CustomerIO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

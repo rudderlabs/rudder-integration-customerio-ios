@@ -1,6 +1,5 @@
 //
-//  RudderAdjustFactory.h
-//  FBSnapshotTestCase
+//  RudderCustomerIOFactory.h
 //
 //  Created by Arnab Pal on 29/10/19.
 //
@@ -10,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RudderFirebaseFactory : NSObject<RSIntegrationFactory>
+@interface RudderCustomerIOFactory : NSObject<RSIntegrationFactory>
 
 + (instancetype) instance;
 

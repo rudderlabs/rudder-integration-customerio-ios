@@ -1,6 +1,6 @@
 //
 //  RudderConfig.swift
-//  Rudder-Firebase_Example
+//  Rudder-CustomerIO_Example
 //
 //  Created by Abhishek Pandey on 21/03/23.
 //  Copyright © 2023 arnabp92. All rights reserved.

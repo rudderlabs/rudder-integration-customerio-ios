@@ -9,19 +9,19 @@ With RudderStack, you can build customer data pipelines that connect your whole 
 
 Questions? Please join our [Slack channel](https://resources.rudderstack.com/join-rudderstack-slack) or read about us on [Product Hunt](https://www.producthunt.com/posts/rudderstack).
 
-## Integrating Firebase with the RudderStack iOS SDK
+## Integrating CustomerIO with the RudderStack iOS SDK
 
-> **_NOTE:_** `Rudder-Firebase` version `3.3.0` is compatible with the `FirebaseAnalytics` version `10.3.0`. 
+> **_NOTE:_** `Rudder-CustomerIO` version `3.3.0` is compatible with the `CustomerIOAnalytics` version `10.3.0`. 
 
-1. Add [Firebase](http://firebase.google.com) as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
+1. Add [CustomerIO](http://customerio.google.com) as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
 
-2. Rudder-Firebase is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your Podfile and followed by `pod install`:
+2. Rudder-CustomerIO is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your Podfile and followed by `pod install`:
 
 ```ruby
-pod 'Rudder-Firebase', '~> 3.3.0'
+pod 'Rudder-CustomerIO', '~> 3.3.0'
 ```
 
-3. Download the `GoogleService-Info.plist` from your Firebase console and put it in your project.
+3. Download the `GoogleService-Info.plist` from your CustomerIO console and put it in your project.
 
 ## Initializing ```RudderClient```
 
@@ -29,7 +29,7 @@ Put this code in your ```AppDelegate.m``` file under the method ```didFinishLaun
 ```
 RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
 [builder withDataPlaneUrl:DATA_PLANE_URL];
-[builder withFactory:[RudderFirebaseFactory instance]];
+[builder withFactory:[RudderCustomerIOFactory instance]];
 [builder withLoglevel:RSLogLevelDebug];
 [RSClient getInstance:WRITE_KEY config:[builder build]];
 ```

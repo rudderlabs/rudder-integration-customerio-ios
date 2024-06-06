@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Rudder-Firebase
+//  Rudder-CustomerIO
 //
 //  Created by arnabp92 on 02/11/2020.
 //  Copyright (c) 2020 arnabp92. All rights reserved.

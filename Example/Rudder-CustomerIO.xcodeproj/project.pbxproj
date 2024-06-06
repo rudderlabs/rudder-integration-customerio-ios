@@ -24,9 +24,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8C4EC75B29C9842A00286AA1 /* SampleRudderConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C4EC75A29C9842A00286AA1 /* SampleRudderConfig.plist */; };
 		8C4EC77229CA188D00286AA1 /* RudderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EC77129CA188D00286AA1 /* RudderConfig.swift */; };
-		8C818DFD2822CC4E00CA76C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C818DFC2822CC4D00CA76C6 /* GoogleService-Info.plist */; };
-		B2B8FCE131A91E27C9E9438C /* Pods_Rudder_Firebase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6488AD546350B0CB45016E5C /* Pods_Rudder_Firebase_Example.framework */; };
-		EBAE3A5B81237F937CBFB63C /* Pods_Rudder_Firebase_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF59B5FE644DD544951BD75 /* Pods_Rudder_Firebase_Tests.framework */; };
+		B2B8FCE131A91E27C9E9438C /* Pods_Rudder_CustomerIO_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6488AD546350B0CB45016E5C /* Pods_Rudder_CustomerIO_Example.framework */; };
+		EBAE3A5B81237F937CBFB63C /* Pods_Rudder_CustomerIO_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF59B5FE644DD544951BD75 /* Pods_Rudder_CustomerIO_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,50 +34,49 @@
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = "Rudder-Firebase";
+			remoteInfo = "Rudder-CustomerIO";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A7505DC12DCE1392D429055 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		0D59DE7B72DAB264FCDA6136 /* Pods-Rudder-Firebase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-Firebase_Tests.release.xcconfig"; path = "Target Support Files/Pods-Rudder-Firebase_Tests/Pods-Rudder-Firebase_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1E4E005BF27BDD226224FF1C /* Pods-Rudder-Firebase_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-Firebase_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Rudder-Firebase_Tests/Pods-Rudder-Firebase_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		576DB78662581889CB3DCBAE /* Pods-Rudder-Firebase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-Firebase_Example.release.xcconfig"; path = "Target Support Files/Pods-Rudder-Firebase_Example/Pods-Rudder-Firebase_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* Rudder-Firebase_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rudder-Firebase_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D59DE7B72DAB264FCDA6136 /* Pods-Rudder-CustomerIO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-CustomerIO_Tests.release.xcconfig"; path = "Target Support Files/Pods-Rudder-CustomerIO_Tests/Pods-Rudder-CustomerIO_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1E4E005BF27BDD226224FF1C /* Pods-Rudder-CustomerIO_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-CustomerIO_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Rudder-CustomerIO_Tests/Pods-Rudder-CustomerIO_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		533CC5D42C11D5BD00B7A2EF /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
+		576DB78662581889CB3DCBAE /* Pods-Rudder-CustomerIO_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-CustomerIO_Example.release.xcconfig"; path = "Target Support Files/Pods-Rudder-CustomerIO_Example/Pods-Rudder-CustomerIO_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* Rudder-CustomerIO_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rudder-CustomerIO_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* Rudder-Firebase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rudder-Firebase-Info.plist"; sourceTree = "<group>"; };
+		6003F595195388D20070C39A /* Rudder-CustomerIO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rudder-CustomerIO-Info.plist"; sourceTree = "<group>"; };
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* Rudder-Firebase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rudder-Firebase-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* Rudder-CustomerIO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rudder-CustomerIO-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* _AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _AppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* _AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _AppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* _ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _ViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* _ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _ViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Rudder-Firebase_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rudder-Firebase_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* Rudder-CustomerIO_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rudder-CustomerIO_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6488AD546350B0CB45016E5C /* Pods_Rudder_Firebase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rudder_Firebase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6488AD546350B0CB45016E5C /* Pods_Rudder_CustomerIO_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rudder_CustomerIO_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7826B9B0E07C42D2BE2648B7 /* Pods-Rudder-Firebase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-Firebase_Example.debug.xcconfig"; path = "Target Support Files/Pods-Rudder-Firebase_Example/Pods-Rudder-Firebase_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7826B9B0E07C42D2BE2648B7 /* Pods-Rudder-CustomerIO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rudder-CustomerIO_Example.debug.xcconfig"; path = "Target Support Files/Pods-Rudder-CustomerIO_Example/Pods-Rudder-CustomerIO_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C4EC75A29C9842A00286AA1 /* SampleRudderConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SampleRudderConfig.plist; sourceTree = "<group>"; };
-		8C4EC76C29C9A5EA00286AA1 /* Rudder-Firebase_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rudder-Firebase_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C4EC76C29C9A5EA00286AA1 /* Rudder-CustomerIO_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rudder-CustomerIO_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		8C4EC77129CA188D00286AA1 /* RudderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudderConfig.swift; sourceTree = "<group>"; };
-		8C818DFC2822CC4D00CA76C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C7561AF63A8CA8E41AD7E467 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D11A801BAABC19DBD9B1A88C /* Rudder-Firebase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Rudder-Firebase.podspec"; path = "../Rudder-Firebase.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D11A801BAABC19DBD9B1A88C /* Rudder-CustomerIO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Rudder-CustomerIO.podspec"; path = "../Rudder-CustomerIO.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED284D3E2913FD4E00076F4C /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../package.json; sourceTree = "<group>"; };
 		ED284D3F2913FD4E00076F4C /* CODEOWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; name = CODEOWNERS; path = ../CODEOWNERS; sourceTree = "<group>"; };
 		ED284D402913FD4E00076F4C /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		ED284D412913FD4E00076F4C /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; name = .github; path = ../.github; sourceTree = "<group>"; };
 		ED284D422913FD4E00076F4C /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
-		EFF59B5FE644DD544951BD75 /* Pods_Rudder_Firebase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rudder_Firebase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF59B5FE644DD544951BD75 /* Pods_Rudder_CustomerIO_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rudder_CustomerIO_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				B2B8FCE131A91E27C9E9438C /* Pods_Rudder_Firebase_Example.framework in Frameworks */,
+				B2B8FCE131A91E27C9E9438C /* Pods_Rudder_CustomerIO_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +98,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				EBAE3A5B81237F937CBFB63C /* Pods_Rudder_Firebase_Tests.framework in Frameworks */,
+				EBAE3A5B81237F937CBFB63C /* Pods_Rudder_CustomerIO_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +108,10 @@
 		19BD5DAEC5DEC06819636E4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7826B9B0E07C42D2BE2648B7 /* Pods-Rudder-Firebase_Example.debug.xcconfig */,
-				576DB78662581889CB3DCBAE /* Pods-Rudder-Firebase_Example.release.xcconfig */,
-				1E4E005BF27BDD226224FF1C /* Pods-Rudder-Firebase_Tests.debug.xcconfig */,
-				0D59DE7B72DAB264FCDA6136 /* Pods-Rudder-Firebase_Tests.release.xcconfig */,
+				7826B9B0E07C42D2BE2648B7 /* Pods-Rudder-CustomerIO_Example.debug.xcconfig */,
+				576DB78662581889CB3DCBAE /* Pods-Rudder-CustomerIO_Example.release.xcconfig */,
+				1E4E005BF27BDD226224FF1C /* Pods-Rudder-CustomerIO_Tests.debug.xcconfig */,
+				0D59DE7B72DAB264FCDA6136 /* Pods-Rudder-CustomerIO_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -122,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Metadata */,
-				6003F593195388D20070C39A /* Rudder-Firebase */,
+				6003F593195388D20070C39A /* Rudder-CustomerIO */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -133,8 +131,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* Rudder-Firebase_Example.app */,
-				6003F5AE195388D20070C39A /* Rudder-Firebase_Tests.xctest */,
+				6003F58A195388D20070C39A /* Rudder-CustomerIO_Example.app */,
+				6003F5AE195388D20070C39A /* Rudder-CustomerIO_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,18 +144,17 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				6488AD546350B0CB45016E5C /* Pods_Rudder_Firebase_Example.framework */,
-				EFF59B5FE644DD544951BD75 /* Pods_Rudder_Firebase_Tests.framework */,
+				6488AD546350B0CB45016E5C /* Pods_Rudder_CustomerIO_Example.framework */,
+				EFF59B5FE644DD544951BD75 /* Pods_Rudder_CustomerIO_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Rudder-Firebase */ = {
+		6003F593195388D20070C39A /* Rudder-CustomerIO */ = {
 			isa = PBXGroup;
 			children = (
 				8C4EC76B29C9A57F00286AA1 /* RudderConfig */,
-				8C4EC76C29C9A5EA00286AA1 /* Rudder-Firebase_Example-Bridging-Header.h */,
-				8C818DFC2822CC4D00CA76C6 /* GoogleService-Info.plist */,
+				8C4EC76C29C9A5EA00286AA1 /* Rudder-CustomerIO_Example-Bridging-Header.h */,
 				6003F59C195388D20070C39A /* _AppDelegate.h */,
 				6003F59D195388D20070C39A /* _AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -167,16 +164,16 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			path = "Rudder-Firebase";
+			path = "Rudder-CustomerIO";
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* Rudder-Firebase-Info.plist */,
+				6003F595195388D20070C39A /* Rudder-CustomerIO-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* Rudder-Firebase-Prefix.pch */,
+				6003F59B195388D20070C39A /* Rudder-CustomerIO-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,9 +205,9 @@
 				ED284D3F2913FD4E00076F4C /* CODEOWNERS */,
 				ED284D422913FD4E00076F4C /* CONTRIBUTING.md */,
 				ED284D3E2913FD4E00076F4C /* package.json */,
-				D11A801BAABC19DBD9B1A88C /* Rudder-Firebase.podspec */,
+				D11A801BAABC19DBD9B1A88C /* Rudder-CustomerIO.podspec */,
 				0A7505DC12DCE1392D429055 /* README.md */,
-				C7561AF63A8CA8E41AD7E467 /* LICENSE */,
+				533CC5D42C11D5BD00B7A2EF /* LICENSE.md */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";
@@ -227,9 +224,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* Rudder-Firebase_Example */ = {
+		6003F589195388D20070C39A /* Rudder-CustomerIO_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-Firebase_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-CustomerIO_Example" */;
 			buildPhases = (
 				810DC68F2552D4E31FCC235D /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
@@ -241,14 +238,14 @@
 			);
 			dependencies = (
 			);
-			name = "Rudder-Firebase_Example";
-			productName = "Rudder-Firebase";
-			productReference = 6003F58A195388D20070C39A /* Rudder-Firebase_Example.app */;
+			name = "Rudder-CustomerIO_Example";
+			productName = "Rudder-CustomerIO";
+			productReference = 6003F58A195388D20070C39A /* Rudder-CustomerIO_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* Rudder-Firebase_Tests */ = {
+		6003F5AD195388D20070C39A /* Rudder-CustomerIO_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-Firebase_Tests" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-CustomerIO_Tests" */;
 			buildPhases = (
 				D4CB18AE97C3EAB1347F5587 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
@@ -261,9 +258,9 @@
 			dependencies = (
 				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
-			name = "Rudder-Firebase_Tests";
-			productName = "Rudder-FirebaseTests";
-			productReference = 6003F5AE195388D20070C39A /* Rudder-Firebase_Tests.xctest */;
+			name = "Rudder-CustomerIO_Tests";
+			productName = "Rudder-CustomerIOTests";
+			productReference = 6003F5AE195388D20070C39A /* Rudder-CustomerIO_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +281,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Rudder-Firebase" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Rudder-CustomerIO" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -298,8 +295,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* Rudder-Firebase_Example */,
-				6003F5AD195388D20070C39A /* Rudder-Firebase_Tests */,
+				6003F589195388D20070C39A /* Rudder-CustomerIO_Example */,
+				6003F5AD195388D20070C39A /* Rudder-CustomerIO_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +309,6 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				8C4EC75B29C9842A00286AA1 /* SampleRudderConfig.plist in Resources */,
-				8C818DFD2822CC4E00CA76C6 /* GoogleService-Info.plist in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -335,34 +331,34 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rudder-Firebase_Example/Pods-Rudder-Firebase_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Rudder-CustomerIO_Example/Pods-Rudder-CustomerIO_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AnalyticsSwiftCIO/CioAnalytics.framework",
+				"${BUILT_PRODUCTS_DIR}/CustomerIOCommon/CioInternalCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/CustomerIODataPipelines/CioDataPipelines.framework",
+				"${BUILT_PRODUCTS_DIR}/CustomerIOTrackingMigration/CioTrackingMigration.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONSafeEncoding/JSONSafeEncoding.framework",
 				"${BUILT_PRODUCTS_DIR}/MetricsReporter/MetricsReporter.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/RSCrashReporter/RSCrashReporter.framework",
 				"${BUILT_PRODUCTS_DIR}/Rudder/Rudder.framework",
 				"${BUILT_PRODUCTS_DIR}/RudderKit/RudderKit.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/Sovran/Sovran.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CioAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CioInternalCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CioDataPipelines.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CioTrackingMigration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONSafeEncoding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MetricsReporter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSCrashReporter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rudder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RudderKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sovran.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rudder-Firebase_Example/Pods-Rudder-Firebase_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rudder-CustomerIO_Example/Pods-Rudder-CustomerIO_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		10B32E73FDECC39A612B1773 /* [CP] Embed Pods Frameworks */ = {
@@ -371,7 +367,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rudder-Firebase_Tests/Pods-Rudder-Firebase_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Rudder-CustomerIO_Tests/Pods-Rudder-CustomerIO_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -380,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rudder-Firebase_Tests/Pods-Rudder-Firebase_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rudder-CustomerIO_Tests/Pods-Rudder-CustomerIO_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		810DC68F2552D4E31FCC235D /* [CP] Check Pods Manifest.lock */ = {
@@ -398,7 +394,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Rudder-Firebase_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Rudder-CustomerIO_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -420,7 +416,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Rudder-Firebase_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Rudder-CustomerIO_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -454,7 +450,7 @@
 /* Begin PBXTargetDependency section */
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* Rudder-Firebase_Example */;
+			target = 6003F589195388D20070C39A /* Rudder-CustomerIO_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -562,20 +558,20 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7826B9B0E07C42D2BE2648B7 /* Pods-Rudder-Firebase_Example.debug.xcconfig */;
+			baseConfigurationReference = 7826B9B0E07C42D2BE2648B7 /* Pods-Rudder-CustomerIO_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rudder-Firebase/Rudder-Firebase-Prefix.pch";
-				INFOPLIST_FILE = "Rudder-Firebase/Rudder-Firebase-Info.plist";
+				GCC_PREFIX_HEADER = "Rudder-CustomerIO/Rudder-CustomerIO-Prefix.pch";
+				INFOPLIST_FILE = "Rudder-CustomerIO/Rudder-CustomerIO-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.0.4;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.integration.test.firebase.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.integration.test.customerio.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Rudder-Firebase/Rudder-Firebase_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rudder-CustomerIO/Rudder-CustomerIO_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -584,20 +580,20 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 576DB78662581889CB3DCBAE /* Pods-Rudder-Firebase_Example.release.xcconfig */;
+			baseConfigurationReference = 576DB78662581889CB3DCBAE /* Pods-Rudder-CustomerIO_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rudder-Firebase/Rudder-Firebase-Prefix.pch";
-				INFOPLIST_FILE = "Rudder-Firebase/Rudder-Firebase-Info.plist";
+				GCC_PREFIX_HEADER = "Rudder-CustomerIO/Rudder-CustomerIO-Prefix.pch";
+				INFOPLIST_FILE = "Rudder-CustomerIO/Rudder-CustomerIO-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.0.4;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.integration.test.firebase.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.integration.test.customerio.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Rudder-Firebase/Rudder-Firebase_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rudder-CustomerIO/Rudder-CustomerIO_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -605,7 +601,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E4E005BF27BDD226224FF1C /* Pods-Rudder-Firebase_Tests.debug.xcconfig */;
+			baseConfigurationReference = 1E4E005BF27BDD226224FF1C /* Pods-Rudder-CustomerIO_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -624,14 +620,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rudder-Firebase_Example.app/Rudder-Firebase_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rudder-CustomerIO_Example.app/Rudder-CustomerIO_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D59DE7B72DAB264FCDA6136 /* Pods-Rudder-Firebase_Tests.release.xcconfig */;
+			baseConfigurationReference = 0D59DE7B72DAB264FCDA6136 /* Pods-Rudder-CustomerIO_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,7 +642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rudder-Firebase_Example.app/Rudder-Firebase_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rudder-CustomerIO_Example.app/Rudder-CustomerIO_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -654,7 +650,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "Rudder-Firebase" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "Rudder-CustomerIO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
@@ -663,7 +659,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-Firebase_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-CustomerIO_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
@@ -672,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-Firebase_Tests" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Rudder-CustomerIO_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,

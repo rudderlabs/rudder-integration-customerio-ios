@@ -1,6 +1,6 @@
 //
 //  _AppDelegate.m
-//  Rudder-Firebase
+//  Rudder-CustomerIO
 //
 //  Created by arnabp92 on 02/11/2020.
 //  Copyright (c) 2020 arnabp92. All rights reserved.
@@ -8,8 +8,8 @@
 
 #import "_AppDelegate.h"
 #import <Rudder/Rudder.h>
-#import "RudderFirebaseFactory.h"
-#import "Rudder_Firebase_Example-Swift.h"
+#import "RudderCustomerIOFactory.h"
+#import "Rudder_CustomerIO_Example-Swift.h"
 
 @implementation _AppDelegate
 
@@ -23,7 +23,7 @@
             RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
             [configBuilder withDataPlaneUrl:rudderConfig.PROD_DATA_PLANE_URL];
             [configBuilder withLoglevel:RSLogLevelVerbose];
-            [configBuilder withFactory:[RudderFirebaseFactory instance]];
+            [configBuilder withFactory:[RudderCustomerIOFactory instance]];
             [configBuilder withTrackLifecycleEvens:NO];
             [configBuilder withSleepTimeOut:3];
             [RSClient getInstance:rudderConfig.WRITE_KEY config:[configBuilder build]];

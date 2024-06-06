@@ -1,11 +1,11 @@
 use_frameworks!
 
-platform :ios, '12.0'
+platform :ios, '13.0'
 
-target 'Rudder-Firebase_Example' do
-  pod 'Rudder-Firebase', :path => '../'
+target 'Rudder-CustomerIO_Example' do
+  pod 'Rudder-CustomerIO', :path => '../'
 
-  target 'Rudder-Firebase_Tests' do
+  target 'Rudder-CustomerIO_Tests' do
     inherit! :search_paths
 
     pod 'FBSnapshotTestCase'
