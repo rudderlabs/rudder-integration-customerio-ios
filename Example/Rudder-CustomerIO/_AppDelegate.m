@@ -8,9 +8,8 @@
 
 #import "_AppDelegate.h"
 #import <Rudder/Rudder.h>
-#import "RudderCustomerIOFactory.h"
 #import "Rudder_CustomerIO_Example-Swift.h"
-
+#import "Rudder_CustomerIO-Swift.h"
 @implementation _AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

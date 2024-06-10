@@ -5,7 +5,10 @@ package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 rudder_sdk_version = '~> 1.26'
 deployment_target = '13.0'
 
-customerio_sdk_name = 'CustomerIO/DataPipelines'
+customerio_sdk_name1 = 'CustomerIO/DataPipelines'
+customerio_sdk_name2 = 'CustomerIO/MessagingPushAPN'
+customerio_sdk_name3 = 'CustomerIO/MessagingPushFCM'
+customerio_sdk_name4 = 'CustomerIO/MessagingInApp'
 customerio_sdk_version = '~> 3.2.2'
 
 Pod::Spec.new do |s|
@@ -26,12 +29,12 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.ios.deployment_target = deployment_target
   
-  if defined?($CustomerIOSDKVersion)
-    Pod::UI.puts "#{s.name}: Using user specified Braze SDK version '#{$CustomerIOSDKVersion}'"
-    customerio_sdk_version = $CustomerIOSDKVersion
-  else
-    Pod::UI.puts "#{s.name}: Using default Braze SDK version '#{CustomerIOSDKVersion}'"
-  end
+#  if defined?($CustomerIOSDKVersion)
+#    Pod::UI.puts "#{s.name}: Using user specified Braze SDK version '#{$CustomerIOSDKVersion}'"
+#    customerio_sdk_version = $CustomerIOSDKVersion
+#  else
+#    Pod::UI.puts "#{s.name}: Using default Braze SDK version '#{CustomerIOSDKVersion}'"
+#  end
   
   if defined?($RudderSDKVersion)
     Pod::UI.puts "#{s.name}: Using user specified Rudder SDK version '#{$RudderSDKVersion}'"
@@ -41,6 +44,9 @@ Pod::Spec.new do |s|
   end
   
   s.dependency 'Rudder', rudder_sdk_version
-  s.dependency customerio_sdk_name, customerio_sdk_version
+  s.dependency customerio_sdk_name1, customerio_sdk_version
+#  s.dependency customerio_sdk_name2, customerio_sdk_version
+#  s.dependency customerio_sdk_name3, customerio_sdk_version
+#  s.dependency customerio_sdk_name4, customerio_sdk_version
   
 end

@@ -4,11 +4,26 @@ PODS:
     - Sovran (= 1.1.1)
   - CustomerIO/DataPipelines (3.2.2):
     - CustomerIODataPipelines (= 3.2.2)
+  - CustomerIO/MessagingInApp (3.2.2):
+    - CustomerIOMessagingInApp (= 3.2.2)
+  - CustomerIO/MessagingPushAPN (3.2.2):
+    - CustomerIOMessagingPushAPN (= 3.2.2)
+  - CustomerIO/MessagingPushFCM (3.2.2):
+    - CustomerIOMessagingPushFCM (= 3.2.2)
   - CustomerIOCommon (3.2.2)
   - CustomerIODataPipelines (3.2.2):
     - "AnalyticsSwiftCIO (= 1.5.13+cio.1)"
     - CustomerIOCommon (= 3.2.2)
     - CustomerIOTrackingMigration (= 3.2.2)
+  - CustomerIOMessagingInApp (3.2.2):
+    - CustomerIOCommon (= 3.2.2)
+  - CustomerIOMessagingPush (3.2.2):
+    - CustomerIOCommon (= 3.2.2)
+  - CustomerIOMessagingPushAPN (3.2.2):
+    - CustomerIOMessagingPush (= 3.2.2)
+  - CustomerIOMessagingPushFCM (3.2.2):
+    - CustomerIOMessagingPush (= 3.2.2)
+    - FirebaseMessaging (< 11, >= 8.7.0)
   - CustomerIOTrackingMigration (3.2.2):
     - CustomerIOCommon (= 3.2.2)
   - FBSnapshotTestCase (2.1.4):
@@ -16,15 +31,73 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - FirebaseCore (10.27.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.12)
+    - GoogleUtilities/Logger (~> 7.12)
+  - FirebaseCoreInternal (10.27.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.27.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - FirebaseMessaging (10.27.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleDataTransport (~> 9.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Reachability (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
+  - GoogleDataTransport (9.4.1):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.13.3):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Environment (7.13.3):
+    - GoogleUtilities/Privacy
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.13.3):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Network (7.13.3):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Privacy
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.13.3)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (7.13.3)
+  - GoogleUtilities/Reachability (7.13.3):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/UserDefaults (7.13.3):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
   - JSONSafeEncoding (2.0.0)
   - MetricsReporter (1.2.1):
     - RSCrashReporter (= 1.0.1)
     - RudderKit (= 1.4.0)
+  - nanopb (2.30910.0):
+    - nanopb/decode (= 2.30910.0)
+    - nanopb/encode (= 2.30910.0)
+  - nanopb/decode (2.30910.0)
+  - nanopb/encode (2.30910.0)
+  - PromisesObjC (2.4.0)
   - RSCrashReporter (1.0.1)
   - Rudder (1.26.3):
     - MetricsReporter (= 1.2.1)
   - Rudder-CustomerIO (1.0.0):
     - CustomerIO/DataPipelines (~> 3.2.2)
+    - CustomerIO/MessagingInApp (~> 3.2.2)
+    - CustomerIO/MessagingPushAPN (~> 3.2.2)
+    - CustomerIO/MessagingPushFCM (~> 3.2.2)
     - Rudder (~> 1.26)
   - RudderKit (1.4.0)
   - Sovran (1.1.1)
@@ -39,10 +112,22 @@ SPEC REPOS:
     - CustomerIO
     - CustomerIOCommon
     - CustomerIODataPipelines
+    - CustomerIOMessagingInApp
+    - CustomerIOMessagingPush
+    - CustomerIOMessagingPushAPN
+    - CustomerIOMessagingPushFCM
     - CustomerIOTrackingMigration
     - FBSnapshotTestCase
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - FirebaseInstallations
+    - FirebaseMessaging
+    - GoogleDataTransport
+    - GoogleUtilities
     - JSONSafeEncoding
     - MetricsReporter
+    - nanopb
+    - PromisesObjC
     - RSCrashReporter
     - Rudder
     - RudderKit
@@ -57,13 +142,25 @@ SPEC CHECKSUMS:
   CustomerIO: e5bc96b0a188b89d53613cb0c1ca542c209f5b1c
   CustomerIOCommon: 93054e3e52840c8ceec5894dd32cf548b516619d
   CustomerIODataPipelines: bbf1a5bab1437efcbffe05e94537624010a3c8a4
+  CustomerIOMessagingInApp: aa06c5509014bc9fcddff9f9c59ddc299d603174
+  CustomerIOMessagingPush: 7e069140407ca55832756def8065226f6cd63ab0
+  CustomerIOMessagingPushAPN: e92e7ad7b2d02262cb12d9ce4420a879f9330fd5
+  CustomerIOMessagingPushFCM: fa0a2a82e0960e8f452367595858bfb01a6a44f0
   CustomerIOTrackingMigration: 9aa4104eaede9fdecc3e43ee499950dbbb2c9687
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  FirebaseCore: a2b95ae4ce7c83ceecfbbbe3b6f1cddc7415a808
+  FirebaseCoreInternal: 4b297a2d56063dbea2c1d0d04222d44a8d058862
+  FirebaseInstallations: 766dabca09fd94aef922538aaf144cc4a6fb6869
+  FirebaseMessaging: 585984d0a1df120617eb10b44cad8968b859815e
+  GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
+  GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   JSONSafeEncoding: 54722ebc4fe1482e3e60a8450e1287481e32dd8b
   MetricsReporter: 99596ee5003c69949ed2f50acc34aee83c42f843
+  nanopb: 438bc412db1928dac798aa6fd75726007be04262
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RSCrashReporter: 6b8376ac729b0289ebe0908553e5f56d8171f313
   Rudder: 23456f79749849870e18c45bd250d6e2229a7147
-  Rudder-CustomerIO: 3f92165eb87c4db57c205680371fd53688a10b7c
+  Rudder-CustomerIO: 6fc49da9c3b9bbc6fee08b989e78eb9317b790d9
   RudderKit: f272f9872183946452ac94cd7bb2244a71e6ca8f
   Sovran: f8212bb3855042a24689a73ea0219ca5295235da
 
