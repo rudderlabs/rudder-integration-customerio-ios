@@ -26,6 +26,9 @@ pod 'Rudder-CustomerIO', '~> 1.1.0'
 Put this code in your ```AppDelegate.swift``` file under the method ```didFinishLaunchingWithOptions```
 ```
 let configBuilder = RSConfigBuilder()
+        .withDataPlaneUrl(DATA_PLANE_URL)
+        .withLoglevel(RSLogLevelDebug)
+        .withFactory(RudderCustomerIOFactory.instance)
             
 RSClient.getInstance(WRITE_KEY, config: configBuilder.build())
 
