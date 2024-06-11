@@ -1,9 +1,8 @@
 //
 //  AppDelegate.swift
-//  PROJECT
+//  Rudder-CustomerIO
 //
-//  Created by PROJECT_OWNER on TODAYS_DATE.
-//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
+//  Created by Satheesh Kannan on 10/06/24.
 //
 
 import UIKit
@@ -17,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        if let path = Bundle.main.path(forResource: "RudderConfig", ofType: "plist"), let url = URL(string: path), let rudderConfig = RudderConfig.create(from: url) {
+        if let path = Bundle.main.path(forResource: "RudderConfig", ofType: "plist") {
+            
+            let url = URL(fileURLWithPath: path)
+            guard let rudderConfig = RudderConfig.create(from: url) else { return true }
+            
             let configBuilder = RSConfigBuilder()
                 .withDataPlaneUrl(rudderConfig.PROD_DATA_PLANE_URL)
                 .withLoglevel(RSLogLevelVerbose)

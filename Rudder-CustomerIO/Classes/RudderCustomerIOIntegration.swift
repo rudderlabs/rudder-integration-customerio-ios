@@ -14,9 +14,7 @@ private struct ServerConfigKey {
     static let apiKey = "apiKey"
     static let siteID = "siteID"
     static let autoTrackDeviceAttributes = "autoTrackDeviceAttributes"
-    static let backgroundQueueMinNumberOfTasks = "backgroundQueueMinNumberOfTasks"
-    static let backgroundQueueSecondsDelay = "backgroundQueueSecondsDelay"
-    static let region = "region"
+    static let dataCenter = "dataCenter"
     static let autoTrackScreenViews = "autoTrackScreenViews"
     static let trackApplicationLifecycleEvents = "trackApplicationLifecycleEvents"
     static let logLevel = "logLevel"
@@ -69,7 +67,7 @@ extension RudderCustomerIOIntegration {
             }
                         
             var region = Region.US
-            if let configRegion = config[ServerConfigKey.region] as? String, !configRegion.isEmpty {
+            if let configRegion = config[ServerConfigKey.dataCenter] as? String, !configRegion.isEmpty {
                 region = configRegion == Region.EU.rawValue ? Region.EU : Region.US
             }
         

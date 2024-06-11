@@ -11,14 +11,14 @@ Questions? Please join our [Slack channel](https://resources.rudderstack.com/joi
 
 ## Integrating CustomerIO with the RudderStack iOS SDK
 
-> **_NOTE:_** `Rudder-CustomerIO` version `1.0.0` is compatible with the `CustomerIO/DataPipelines` version `3.2.2`. 
+> **_NOTE:_** `Rudder-CustomerIO` version `1.1.0` is compatible with the `CustomerIO/DataPipelines` version `3.2.2`. 
 
 1. Add [CustomerIO](https://customer.io/) as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
 
 2. Rudder-CustomerIO is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your Podfile and followed by `pod install`:
 
 ```ruby
-pod 'Rudder-CustomerIO', '~> 1.0.0'
+pod 'Rudder-CustomerIO', '~> 1.1.0'
 ```
 
 ## Initializing ```RudderClient```
@@ -26,10 +26,6 @@ pod 'Rudder-CustomerIO', '~> 1.0.0'
 Put this code in your ```AppDelegate.swift``` file under the method ```didFinishLaunchingWithOptions```
 ```
 let configBuilder = RSConfigBuilder()
-        .withDataPlaneUrl(DATA_PLANE_URL)
-        .withLoglevel(RSLogLevelDebug)
-        .withFactory(RudderCustomerIOFactory.instance)
-        .withTrackLifecycleEvens(false)
             
 RSClient.getInstance(WRITE_KEY, config: configBuilder.build())
 
