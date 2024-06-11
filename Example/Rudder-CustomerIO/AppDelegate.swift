@@ -9,7 +9,6 @@
 import UIKit
 import Rudder
 import Rudder_CustomerIO
-import CioMessagingInApp
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        if let path = Bundle.main.path(forResource: "SampleRudderConfig", ofType: "plist"), let url = URL(string: path), let rudderConfig = RudderConfig.create(from: url) {
+        if let path = Bundle.main.path(forResource: "RudderConfig", ofType: "plist"), let url = URL(string: path), let rudderConfig = RudderConfig.create(from: url) {
             let configBuilder = RSConfigBuilder()
                 .withDataPlaneUrl(rudderConfig.PROD_DATA_PLANE_URL)
                 .withLoglevel(RSLogLevelVerbose)

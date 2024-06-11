@@ -81,20 +81,19 @@ extension RudderCustomerIOIntegration {
                 .autoTrackDeviceAttributes(autoTrackDeviceAttributes)
                 .autoTrackUIKitScreenViews(enabled: self.rudderConfig.recordScreenViews)
                 .trackApplicationLifecycleEvents(self.rudderConfig.trackLifecycleEvents)
-                .logLevel(self.prepareCustomerIOLogLevel(Int(self.rudderConfig.logLevel)))
+                .logLevel(self.prepareCustomerIOLogLevel(self.rudderConfig.logLevel))
             
             CustomerIO.initialize(withConfig: cioConfig.build())
-            
         }
     }
     
-    func prepareCustomerIOLogLevel(_ level: Int) -> CioLogLevel {
+    func prepareCustomerIOLogLevel(_ level: Int32) -> CioLogLevel {
         return switch level {
-        case 5, 4:
+        case RSLogLevelVerbose, RSLogLevelDebug:
                 .debug
-        case 3, 2:
+        case RSLogLevelInfo, RSLogLevelWarning:
                 .info
-        case 1:
+        case RSLogLevelError:
                 .error
         default:
                 .none
