@@ -75,10 +75,6 @@ extension RudderCustomerIOIntegration {
         
             let autoTrackDeviceAttributes = (config[ServerConfigKey.autoTrackDeviceAttributes] as? Bool) ?? true
             
-            //TO_DO: Need to check with Arnab...
-            let backgroundQueueMinNumberOfTasks = (config[ServerConfigKey.backgroundQueueMinNumberOfTasks] as? Int) ?? 10
-            let backgroundQueueSecondsDelay = (config[ServerConfigKey.backgroundQueueSecondsDelay] as? Double) ?? 30.0
-            
             let cioConfig = SDKConfigBuilder(cdpApiKey: apiKey)
                 .migrationSiteId(siteID)
                 .region(region)
@@ -93,7 +89,6 @@ extension RudderCustomerIOIntegration {
     }
     
     func prepareCustomerIOLogLevel(_ level: Int) -> CioLogLevel {
-//        //TO_DO: Need to check with Arnab...
         return switch level {
         case 5, 4:
                 .debug
@@ -147,7 +142,8 @@ extension RudderCustomerIOIntegration: RSIntegration {
 
 extension RudderCustomerIOIntegration {
     func handleIdentifyMessage(_ message: RSMessage) {
-        guard let traits = message.traits as? [String: Any] else { return }
+        guard let traits = message.context.traits as? [String: Any] else { return }
+        
         let userId = message.userId
         let anonymousId = message.anonymousId
         

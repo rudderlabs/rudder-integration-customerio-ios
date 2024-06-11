@@ -95,14 +95,14 @@ PODS:
     - MetricsReporter (= 1.2.1)
   - Rudder-CustomerIO (1.0.0):
     - CustomerIO/DataPipelines (~> 3.2.2)
-    - CustomerIO/MessagingInApp (~> 3.2.2)
-    - CustomerIO/MessagingPushAPN (~> 3.2.2)
-    - CustomerIO/MessagingPushFCM (~> 3.2.2)
     - Rudder (~> 1.26)
   - RudderKit (1.4.0)
   - Sovran (1.1.1)
 
 DEPENDENCIES:
+  - CustomerIO/MessagingInApp
+  - CustomerIO/MessagingPushAPN
+  - CustomerIO/MessagingPushFCM
   - FBSnapshotTestCase
   - Rudder-CustomerIO (from `../`)
 
@@ -160,10 +160,10 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RSCrashReporter: 6b8376ac729b0289ebe0908553e5f56d8171f313
   Rudder: 23456f79749849870e18c45bd250d6e2229a7147
-  Rudder-CustomerIO: 6fc49da9c3b9bbc6fee08b989e78eb9317b790d9
+  Rudder-CustomerIO: 3f92165eb87c4db57c205680371fd53688a10b7c
   RudderKit: f272f9872183946452ac94cd7bb2244a71e6ca8f
   Sovran: f8212bb3855042a24689a73ea0219ca5295235da
 
-PODFILE CHECKSUM: 9388fc2bb7c7c4708db2543d79797d343fe17ee3
+PODFILE CHECKSUM: db381a0c47364014d8905d912e05db7f4e0781a0
 
 COCOAPODS: 1.15.2

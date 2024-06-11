@@ -26,4 +26,6 @@ public class RudderCustomerIOFactory: NSObject, RSIntegrationFactory {
     public func key() -> String {
         return "Customer IO"
     }
+    
+    private override init() {}
 }
