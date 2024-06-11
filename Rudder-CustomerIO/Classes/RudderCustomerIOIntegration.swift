@@ -54,17 +54,17 @@ extension RudderCustomerIOIntegration {
         guard let config = self.config as? [String: Any] else { return }
         
         if config.isEmpty {
-            RSLogger.logError("Invalid api key. Aborting customerio initialization.")
+            RSLogger.logError("Destination configuration is empty. Aborting customerio initialization.")
             return
         } else {
             
             guard let apiKey = config[ServerConfigKey.apiKey] as? String, !apiKey.isEmpty else {
-                RSLogger.logError("Invalid api key. Aborting Customer.")
+                RSLogger.logError("Invalid API key. Aborting customerio initialization.")
                 return
             }
             
             guard let siteID = config[ServerConfigKey.siteID] as? String, !siteID.isEmpty else {
-                RSLogger.logError("Invalid site id. Aborting Customer.")
+                RSLogger.logError("Invalid site id. Aborting customerio initialization.")
                 return
             }
                         
@@ -124,7 +124,7 @@ extension RudderCustomerIOIntegration: RSIntegration {
             self.handleScreenMessage(message)
             
         default:
-            RSLogger.logWarn("CustomerIOIntegrationFactory: MessageType is not specified")
+            RSLogger.logWarn("CustomerIOIntegrationFactory: MessageType(\(message.type.capitalized) is not supported")
         }
     }
     
@@ -133,7 +133,7 @@ extension RudderCustomerIOIntegration: RSIntegration {
     }
     
     public func flush() {
-        RSLogger.logDebug("Customer IO requestImmediateDataFlush().")
+        RSLogger.logDebug("CustomerIOIntegrationFactory: flush API is not supported.")
     }
 }
 
