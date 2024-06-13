@@ -27,10 +27,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = deployment_target
   
   if defined?($CustomerIOSDKVersion)
-    Pod::UI.puts "#{s.name}: Using user specified Braze SDK version '#{$CustomerIOSDKVersion}'"
+    Pod::UI.puts "#{s.name}: Using user specified CustomerIO SDK version '#{$CustomerIOSDKVersion}'"
     customerio_sdk_version = $CustomerIOSDKVersion
   else
-    Pod::UI.puts "#{s.name}: Using default Braze SDK version '#{CustomerIOSDKVersion}'"
+    Pod::UI.puts "#{s.name}: Using default CustomerIO SDK version '#{customerio_sdk_version}'"
   end
   
   if defined?($RudderSDKVersion)

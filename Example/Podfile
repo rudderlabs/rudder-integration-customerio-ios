@@ -4,7 +4,11 @@ platform :ios, '13.0'
 
 target 'Rudder-CustomerIO_Example' do
   pod 'Rudder-CustomerIO', :path => '../'
-
+  
+  pod 'CustomerIO/MessagingPushAPN'
+  pod 'CustomerIO/MessagingPushFCM'
+  pod 'CustomerIO/MessagingInApp'
+  
   target 'Rudder-CustomerIO_Tests' do
     inherit! :search_paths
 
