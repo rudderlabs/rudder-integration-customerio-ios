@@ -26,12 +26,12 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.ios.deployment_target = deployment_target
   
-#  if defined?($CustomerIOSDKVersion)
-#    Pod::UI.puts "#{s.name}: Using user specified CustomerIO SDK version '#{$CustomerIOSDKVersion}'"
-#    customerio_sdk_version = $CustomerIOSDKVersion
-#  else
-#    Pod::UI.puts "#{s.name}: Using default CustomerIO SDK version '#{CustomerIOSDKVersion}'"
-#  end
+  if defined?($CustomerIOSDKVersion)
+    Pod::UI.puts "#{s.name}: Using user specified CustomerIO SDK version '#{$CustomerIOSDKVersion}'"
+    customerio_sdk_version = $CustomerIOSDKVersion
+  else
+    Pod::UI.puts "#{s.name}: Using default CustomerIO SDK version '#{customerio_sdk_version}'"
+  end
   
   if defined?($RudderSDKVersion)
     Pod::UI.puts "#{s.name}: Using user specified Rudder SDK version '#{$RudderSDKVersion}'"

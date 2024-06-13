@@ -14,7 +14,7 @@ private struct ServerConfigKey {
     static let apiKey = "apiKey"
     static let siteID = "siteID"
     static let autoTrackDeviceAttributes = "autoTrackDeviceAttributes"
-    static let dataCenter = "dataCenter"
+    static let dataCenter = "datacenter"
     static let autoTrackScreenViews = "autoTrackScreenViews"
     static let trackApplicationLifecycleEvents = "trackApplicationLifecycleEvents"
     static let logLevel = "logLevel"
