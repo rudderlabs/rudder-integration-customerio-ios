@@ -31,4 +31,20 @@ RSClient *client;
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)identifyAction:(UIButton *)sender {
+    [client identify:@"Test_User_127" traits: @{@"email": @"satheesh@rudderstack.com", @"firstName": @"Satheesh Kannan", @"lastName": @"Arumugam"}];
+}
+
+- (IBAction)trackAction:(UIButton *)sender {
+    [client track:@"Test_User127_Track"];
+}
+
+- (IBAction)screenAction:(UIButton *)sender {
+    [client screen:@"Test_User127_Screen"];
+}
+
+- (IBAction)resetAction:(UIButton *)sender {
+    [client reset:YES];
+}
+
 @end

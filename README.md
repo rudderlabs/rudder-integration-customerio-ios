@@ -11,27 +11,27 @@ Questions? Please join our [Slack channel](https://resources.rudderstack.com/joi
 
 ## Integrating CustomerIO with the RudderStack iOS SDK
 
-> **_NOTE:_** `Rudder-CustomerIO` version `3.3.0` is compatible with the `CustomerIOAnalytics` version `10.3.0`. 
+> **_NOTE:_** `Rudder-CustomerIO` version `1.1.0` is compatible with the `CustomerIO/DataPipelines` version `3.2.2`. 
 
-1. Add [CustomerIO](http://customerio.google.com) as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
+1. Add [CustomerIO](https://customer.io/) as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
 
 2. Rudder-CustomerIO is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your Podfile and followed by `pod install`:
 
 ```ruby
-pod 'Rudder-CustomerIO', '~> 3.3.0'
+pod 'Rudder-CustomerIO', '~> 1.1.0'
 ```
-
-3. Download the `GoogleService-Info.plist` from your CustomerIO console and put it in your project.
 
 ## Initializing ```RudderClient```
 
-Put this code in your ```AppDelegate.m``` file under the method ```didFinishLaunchingWithOptions```
+Put this code in your ```AppDelegate.swift``` file under the method ```didFinishLaunchingWithOptions```
 ```
-RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
-[builder withDataPlaneUrl:DATA_PLANE_URL];
-[builder withFactory:[RudderCustomerIOFactory instance]];
-[builder withLoglevel:RSLogLevelDebug];
-[RSClient getInstance:WRITE_KEY config:[builder build]];
+let configBuilder = RSConfigBuilder()
+        .withDataPlaneUrl(DATA_PLANE_URL)
+        .withLoglevel(RSLogLevelDebug)
+        .withFactory(RudderCustomerIOFactory.instance)
+            
+RSClient.getInstance(WRITE_KEY, config: configBuilder.build())
+
 ```
 
 ## Setup the sample iOS app
