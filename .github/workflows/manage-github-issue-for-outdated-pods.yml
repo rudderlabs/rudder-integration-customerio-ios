@@ -27,4 +27,4 @@ jobs:
 
       - name: Get the github issue url
         if: steps.check-outdated-pods-and-create-issue.outputs.issue-url != ''
-        run: echo "The Github issue url is ${{ steps.check-outdated-pods-and-create-i
+        run: echo "The Github issue url is ${{ steps.check-outdated-pods-and-create-issue.outputs.issue-url }}"
