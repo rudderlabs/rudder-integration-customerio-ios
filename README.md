@@ -11,15 +11,38 @@ Questions? Please join our [Slack channel](https://resources.rudderstack.com/joi
 
 ## Integrating CustomerIO with the RudderStack iOS SDK
 
-> **_NOTE:_** `Rudder-CustomerIO` version `1.1.0` is compatible with the `CustomerIO/DataPipelines` version `3.2.2`. 
+> **_NOTE:_** `Rudder-CustomerIO` version `1.2.0` is compatible with the `CustomerIO/DataPipelines` version `3.2.2`. 
 
 1. Add [CustomerIO](https://customer.io/) as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
 
-2. Rudder-CustomerIO is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your Podfile and followed by `pod install`:
+2. Rudder-CustomerIO is available through [CocoaPods](https://cocoapods.org) and [Swift Package Manager (SPM)](https://www.swift.org/package-manager/). 
+
+### CocoaPods
+Add the following line to your Podfile and followed by `pod install`:
 
 ```ruby
-pod 'Rudder-CustomerIO', '~> 1.1.0'
+pod 'Rudder-CustomerIO', '~> 1.2.0'
 ```
+
+### Swift Package Manager (SPM)
+
+You can also add the RudderStack iOS SDK via Swift Package Mangaer.
+
+* Go to **File** -> **Add Package**, as shown:
+
+![add_package](screenshots/add_package.png)
+
+* Enter the package repository (`https://github.com/rudderlabs/rudder-integration-customerio-ios`) in the search bar.
+
+*  In **Dependency Rule**, select **Exact Version** and enter latest as the value, as shown:
+
+![add_package](screenshots/set_dependency.png)
+
+* Select the project to which you want to add the package.
+
+* Finally, click on **Add Package**.
+
+#### Swift
 
 ## Initializing ```RudderClient```
 

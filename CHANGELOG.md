@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.2.0 (2024-09-09)
+
+
+### Features
+
+* add spm support for customerio integration ([#10](https://github.com/rudderlabs/rudder-integration-customerio-ios/issues/10)) ([cc4687c](https://github.com/rudderlabs/rudder-integration-customerio-ios/commit/cc4687c271dc43f709f5f636c8253feb80bf5183))
+
 ## 1.1.0 (2024-06-13)
 
 
