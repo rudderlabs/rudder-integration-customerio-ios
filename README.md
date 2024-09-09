@@ -11,7 +11,7 @@ Questions? Please join our [Slack channel](https://resources.rudderstack.com/joi
 
 ## Integrating CustomerIO with the RudderStack iOS SDK
 
-> **_NOTE:_** `Rudder-CustomerIO` version `1.1.0` is compatible with the `CustomerIO/DataPipelines` version `3.2.2`. 
+> **_NOTE:_** `Rudder-CustomerIO` version `1.2.0` is compatible with the `CustomerIO/DataPipelines` version `3.2.2`. 
 
 1. Add [CustomerIO](https://customer.io/) as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
 
@@ -21,7 +21,7 @@ Questions? Please join our [Slack channel](https://resources.rudderstack.com/joi
 Add the following line to your Podfile and followed by `pod install`:
 
 ```ruby
-pod 'Rudder-CustomerIO', '~> 1.1.0'
+pod 'Rudder-CustomerIO', '~> 1.2.0'
 ```
 
 ### Swift Package Manager (SPM)
