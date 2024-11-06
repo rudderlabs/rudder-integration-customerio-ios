@@ -6,7 +6,7 @@ rudder_sdk_version = '~> 1.26'
 deployment_target = '13.0'
 
 customerio_sdk_name = 'CustomerIO/DataPipelines'
-customerio_sdk_version = '~> 3.2.2'
+customerio_sdk_version = '~> 3.5.1'
 
 Pod::Spec.new do |s|
   s.name             = 'Rudder-CustomerIO'
