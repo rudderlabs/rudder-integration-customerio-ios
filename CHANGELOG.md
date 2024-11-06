@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.3.0 (2024-11-06)
+
+
+### Features
+
+* upgraded customer.io SDK version to 3.5.1 ([#13](https://github.com/rudderlabs/rudder-integration-customerio-ios/issues/13)) ([540f800](https://github.com/rudderlabs/rudder-integration-customerio-ios/commit/540f800b3fdcc2739d4fde47233cdaf78221477c))
+
 ## 1.2.0 (2024-09-09)
 
 
