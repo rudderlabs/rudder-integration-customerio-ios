@@ -14,7 +14,7 @@ let package = Package(
             targets: ["Rudder-CustomerIO"]),
     ],
     dependencies: [
-        .package(name: "Customer.io", url: "https://github.com/customerio/customerio-ios", .exact("3.2.2")),
+        .package(name: "Customer.io", url: "https://github.com/customerio/customerio-ios", .exact("3.5.1")),
         .package(name: "Rudder", url: "https://github.com/rudderlabs/rudder-sdk-ios", "1.29.0"..<"2.0.0")
     ],
     targets: [
