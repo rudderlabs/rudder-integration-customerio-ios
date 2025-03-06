@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.4.0 (2025-03-04)
+
+
+### Features
+
+* bump the customerIO SDK to v3.8.0 ([024e7ac](https://github.com/rudderlabs/rudder-integration-customerio-ios/commit/024e7ac581164ee2329281d052f4072a6bd86ddb))
+
 ## 1.3.0 (2024-11-06)
 
 
