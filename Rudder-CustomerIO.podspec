@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Rudder-CustomerIO/Classes/**/*'
   s.static_framework = true
   s.ios.deployment_target = deployment_target
+  s.swift_version = '5.0'
   
   if defined?($CustomerIOSDKVersion)
     Pod::UI.puts "#{s.name}: Using user specified CustomerIO SDK version '#{$CustomerIOSDKVersion}'"
