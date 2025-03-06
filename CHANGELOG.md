@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.4.1 (2025-03-06)
+
+
+### Bug Fixes
+
+* set swift version to 5.0 in the podspec file ([f34baa0](https://github.com/rudderlabs/rudder-integration-customerio-ios/commit/f34baa0234e1a17bd3f71282690e534437242ef9))
+
 ## 1.4.0 (2025-03-04)
 
 
