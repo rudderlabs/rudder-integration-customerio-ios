@@ -3,7 +3,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 rudder_sdk_version = '~> 1.26'
-deployment_target = '13.0'
+deployment_target = '15.0'
 
 customerio_sdk_name = 'CustomerIO/DataPipelines'
 customerio_sdk_version = '~> 3.8.0'

@@ -58,3 +58,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+// MARK: - UIScene lifecycle
+
+// Intentionally minimal: the storyboard sets up the window; this sample has no
+// deep links or scene logic to forward.
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    var window: UIWindow?
+}
+
